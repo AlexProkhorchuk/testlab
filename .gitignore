@@ -1,55 +1,45 @@
-# Prerequisites
-*.d
+# Ігноруємо все, що генерує CubeMX
+source/Debug/
+source/Release/
+source/.mxproject
+source/*.launch
+source/*.log
+source/*.bak
+source/*.tmp
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# ARM-MDK-KEIL специфічні файли
+source/*.uvguix.*
+source/*.uvoptx
+source/*.uvprojx
+source/*.uvgui.*
+source/*.uvopt
+source/*.uvproj
+source/*.ini
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Об’єкти та бінарники
+source/**/*.o
+source/**/*.d
+source/**/*.axf
+source/**/*.elf
+source/**/*.hex
+source/**/*.bin
+source/**/*.map
+source/**/*.lst
 
-# Precompiled Headers
-*.gch
-*.pch
+# Автоматично згенеровані бібліотеки
+source/**/*.lib
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Конфігураційні та кеш-файли
+source/.settings/
+source/.cproject
+source/.project
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Системні файли IDE
+source/*.sct
+source/*.scvd
+source/*.uvgui.*
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
-*.dwo
+# OS специфічні
+source/*~
+source/*.swp
+source/*.DS_Store
