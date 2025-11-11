@@ -111,6 +111,8 @@ int main(void)
   {
     /* USER CODE END WHILE */
     MX_USB_HOST_Process();
+		HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_12); // ??????????? LED D12
+    HAL_Delay(200);
 
     /* USER CODE BEGIN 3 */
   }
